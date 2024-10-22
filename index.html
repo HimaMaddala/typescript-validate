@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Say <span class="highlight">Hello!</span></h1>
+            <p>Feel free to stop by and say hi!</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+            <label for="nameInput">Name <span class="required">*</span></label>
+            <input type="text" id="nameInput" required><br><br>
+
+            <label for="emailInput">E-mail id <span class="required">*</span></label>
+            <input type="email" id="emailInput" required><br><br>
+
+            <label for="contactInput">Contact Number <span class="required">*</span></label>
+            <input type="tel" id="contactInput" pattern="[0-9]{10}" required><br><br>
+
+            <label for="subjectInput">Subject <span class="required">*</span></label>
+            <input type="text" id="subjectInput" required><br><br>
+
+            <label for="messageInput">Message <span class="required">*</span></label>
+            <textarea id="messageInput" rows="4" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <div id="message" style="margin-top: 10px;text-align: center;font-weight: bold;"></div>
+
+        <div class="design-corner">
+            <img src="image.jpg" alt="Design" />
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

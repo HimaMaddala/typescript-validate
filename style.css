@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 400px;
+    margin: 10px 0;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #099f4e;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #099f4e;
+}
+
+textarea {
+    resize: none;
+}
+
+.required {
+    color: red;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0dba4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #00a94f;
+}
+
+.design-corner {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.design-corner img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
